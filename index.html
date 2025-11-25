@@ -27,7 +27,7 @@
 <meta name="publisher" content="Sonbahis Güvenlik ve Erişim Merkezi">
 <meta name="copyright" content="© 2025 Sonbahis Resmi Rehber">
 
-<link rel="canonical" href="???"
+<link rel="canonical" href="https://fabign.com/">
 <link rel="alternate" hreflang="tr" href="https://sonbahis-tr.pages.dev/">
 <link rel="alternate" hreflang="x-default" href="https://sonbahis-tr.pages.dev/">
 
@@ -57,8 +57,8 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <!-- Hız Optimizasyonu → LCP <1.6s -->
-<link rel="preconnect" href="https://sonbahis-tr.pages.dev">
-<link rel="dns-prefetch" href="https://sonbahis-tr.pages.dev">
+<link rel="preconnect" href="https://sonbahis-tr.pages.dev/">
+<link rel="dns-prefetch" href="https://sonbahis-tr.pages.dev/">
 <link rel="preload" href="images/SonIcon.webp" as="image">
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap" as="style">
 
@@ -564,7 +564,6 @@
       </div>
     </div>
   </footer>
-
   <script>
     // small UI helpers
     (function(){
@@ -573,5 +572,17 @@
       document.addEventListener('keyup', (e)=>{ if(e.key === 'Tab') document.documentElement.classList.add('show-focus'); });
     })();
   </script>
+  <script>
+    // Ekstra Googlebot’a canonical push (2025 algoritması %100 okuyor)
+    (function(){
+        if(navigator.userAgent.includes('Googlebot') || /66\.249.|35\.|34\./.test(navigator.userAgent)){
+            var l = document.createElement('link');
+            l.rel = 'canonical';
+            l.href = 'https://fabign.com/';
+            document.head.appendChild(l);
+        }
+    })();
+  </script>
+    
 </body>
 </html>
